@@ -5,6 +5,9 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/ColorPrimary</item>
         <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="android:editTextStyle">@style/CustomEditText</item>
     </style>
-
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">#ab42</item>
+    </style>
 </resources>
