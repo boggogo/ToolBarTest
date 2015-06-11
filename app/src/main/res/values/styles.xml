@@ -1,13 +1,20 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="@style/_AppTheme"/>
+
+    <style name="_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/ColorPrimary</item>
         <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
-        <item name="android:editTextStyle">@style/CustomEditText</item>
+        <item name="android:editTextBackground">@drawable/apptheme_edit_text_holo_light</item>
     </style>
-    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
-        <item name="android:textColor">#ab42</item>
+
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:ems">20</item>
+        <item name="android:layout_marginRight">35dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
     </style>
 </resources>
